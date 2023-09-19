@@ -22,7 +22,7 @@ router
   
 router
   .route('/login')
-  .get(
+  .post(
     validation.loginUserValidator,
     authController.login
   )
